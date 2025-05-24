@@ -17,7 +17,7 @@ def make_claude_adapter(
         resp = await aclient.messages.create(
             model=model,
             max_tokens=max_tokens,
-            thinking={"type": "enabled", "budget_tokens": thinking_budget} if thinking_budget > 0 else None,
+            thinking={"type": "enabled", "budget_tokens": thinking_budget} if thinking_budget > 0 else {"type": "disabled"},
             messages=[
                 {
                     "role": "user",

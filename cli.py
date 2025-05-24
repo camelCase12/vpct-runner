@@ -30,7 +30,7 @@ def parse_args() -> argparse.Namespace:
     # ───────── shared per-request limits ─────────────────────────────────────
     p.add_argument("--max-tokens",     type=int, default=4096)
     p.add_argument("--timeout-seconds", type=int, default=600)
-    p.add_argument("--thinking-budget", type=int, default=16_000,
+    p.add_argument("--thinking-budget", type=int, default=0,
                    help="Anthropic thinking_budget (ignored by OpenAI).")
 
     # ───────── OpenAI-compatible endpoint options ──────────────────────
