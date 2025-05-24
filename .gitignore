@@ -1,0 +1,24 @@
+# VPCT stuffs
+runs/
+data/
+
+# Python stuffs
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# IDE stuffs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
