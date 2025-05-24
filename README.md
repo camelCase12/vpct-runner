@@ -26,12 +26,18 @@ Run image-based bucket-prediction benchmarks across OpenAI-compatible and Anthro
 - `--overwrite`
 - `--max-tokens MAX_TOKENS`
 - `--timeout-seconds TIMEOUT_SECONDS`
-- `--thinking-budget THINKING_BUDGET` - Anthropic thinking_budget (ignored by OpenAI). (default: 16000)
+- `--thinking-budget THINKING_BUDGET` - Anthropic thinking_budget (ignored by OpenAI). (default: 0)
 - `--openai-base-url OPENAI_BASE_URL` - Override base_url for OpenAI-compatible endpoints (e.g. https://openrouter.ai/api/v1). (default: None)
 - `--openai-api-key OPENAI_API_KEY` - API key for that endpoint. If omitted, falls back to OPENAI_API_KEY env var. (default: None)
 
 ### Example:
 
 ```bash
-python run-vpct.py -d ./data -o ./runs/gpt-4o-mini-test-subset -m gpt-4o-mini --runs 1 --batch-size 100 --max-tokens 16384 --subset 5
+python run-vpct.py -d ./data -o ./runs/gpt-4o-mini-test-subset -m gpt-4o-mini --runs 1 --batch-size 5 --max-tokens 16384 --subset 5
+```
+
+Or for a 3rd party with an openai compatibility layer:
+
+```bash
+python run-vpct.py -d ./data -o ./runs/gemini-flash-test -m gemini-2.0-flash --runs 1 --batch-size 5 --max-tokens 4096 --subset 5 --openai-base-url https://generativelanguage.googleapis.com/v1beta/openai/ --openai-api-key $GEMINI_API_KEY
 ```
