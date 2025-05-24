@@ -6,7 +6,7 @@ This is the benchmark runner code for the visual physics comprehension test (VPC
 
 ## Usage
 
-Check ```python model_registry.py``` to see a list of configured model slugs.
+Check ```model_registry.py``` to see a list of configured model slugs.
 
 ```
 usage: run-vpct.py [-h] [-d DATA_DIR] [-o OUTPUT_DIR] [-p PROMPT_FILE] [-m MODELS] [--runs RUNS] [--batch-size BATCH_SIZE] [--subset SUBSET] [--max-retries MAX_RETRIES] [--base-delay BASE_DELAY] [--overwrite] [--max-tokens MAX_TOKENS] [--timeout-seconds TIMEOUT_SECONDS] [--thinking-budget THINKING_BUDGET] [--openai-base-url OPENAI_BASE_URL] [--openai-api-key OPENAI_API_KEY]
