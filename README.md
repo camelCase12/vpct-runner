@@ -2,7 +2,9 @@
 
 [Visual Physics Comprehension Test Leaderboard](https://cbrower.dev/vpct)
 
-This is the benchmark runner code for the visual physics comprehension test (VPCT). To run the benchmark, execute run-vpct.py with options specified below. You'll need to acquire a VPCT dataset and place it in the data directory that you feed to the runner--VPCT datasets will be linked here once published (I have not yet publicly published any VPCT data).
+[VPCT-1 Dataset](https://huggingface.co/datasets/camelCase12/vpct-1)
+
+This is the benchmark runner code for the visual physics comprehension test (VPCT). To run the benchmark, execute run-vpct.py with options specified below. You'll need to acquire a VPCT dataset and place it in the data directory that you feed to the runner--VPCT-1 dataset can be found [here](https://huggingface.co/datasets/camelCase12/vpct-1).
 
 ## Usage
 
