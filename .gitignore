@@ -1,6 +1,8 @@
 # VPCT stuffs
 runs/
 data/
+data-redux/
+site-export/
 
 # Python stuffs
 .venv/

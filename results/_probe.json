@@ -1,0 +1,94 @@
+{
+ "cli": "2.1.310",
+ "rows": [
+  {
+   "model": "claude-opus-5",
+   "level": "high",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "adaptive",
+     "display": "updates"
+    },
+    "effort": "high",
+    "max_tokens": 64000
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "level": "low",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "adaptive",
+     "display": "updates"
+    },
+    "effort": "low",
+    "max_tokens": 64000
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "level": "max",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "adaptive",
+     "display": "updates"
+    },
+    "effort": "max",
+    "max_tokens": 64000
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "level": "medium",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "adaptive",
+     "display": "updates"
+    },
+    "effort": "medium",
+    "max_tokens": 64000
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "level": "off",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "disabled"
+    },
+    "effort": "high",
+    "max_tokens": 64000
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "level": "xhigh",
+   "ok": true,
+   "reason": null,
+   "in_matrix": true,
+   "sent": {
+    "thinking": {
+     "type": "adaptive",
+     "display": "updates"
+    },
+    "effort": "xhigh",
+    "max_tokens": 64000
+   }
+  }
+ ]
+}

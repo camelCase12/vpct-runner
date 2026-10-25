@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VPCT Matrix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <h1>VPCT</h1>
+  <div class="seg" id="ds-seg" role="radiogroup" aria-label="Dataset">
+    <button data-v="main">main</button><button data-v="redux">redux</button><button data-v="pooled">pooled</button>
+  </div>
+  <div class="usage" id="usage"></div>
+  <button class="ghost" id="theme" aria-label="Toggle theme">◐</button>
+</header>
+<div class="filters" id="filters" aria-label="Models"></div>
+
+<main>
+  <section class="card" id="sec-matrix">
+    <div class="card-head">
+      <h2>Matrix</h2>
+      <div class="seg small" id="mx-metric">
+        <button data-v="acc">accuracy</button><button data-v="cost">$/problem</button><button data-v="tok_out">output tok</button><button data-v="ms">latency</button>
+      </div>
+    </div>
+    <div id="matrix"></div>
+  </section>
+
+  <div class="row">
+    <section class="card grow">
+      <div class="card-head">
+        <h2>Accuracy vs <span id="sc-xlabel">cost</span></h2>
+        <div class="seg small" id="sc-x">
+          <button data-v="cost">$/problem</button><button data-v="tok_out">output tok</button><button data-v="ms">latency</button>
+        </div>
+      </div>
+      <div id="scatter" class="plot"></div>
+      <div class="legend" id="legend"></div>
+    </section>
+    <section class="card side">
+      <div class="card-head"><h2>main vs redux</h2></div>
+      <div id="split" class="plot"></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Problems</h2>
+    </div>
+    <div id="problems"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Table</h2></div>
+    <div class="table-wrap"><table id="table"></table></div>
+  </section>
+</main>
+
+<aside id="panel" hidden>
+  <button class="ghost close" id="panel-close" aria-label="Close">×</button>
+  <div id="panel-body"></div>
+</aside>
+<div id="tip" role="tooltip" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
